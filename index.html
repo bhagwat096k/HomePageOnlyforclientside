@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Home Page</title>
+    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-500 p-4 text-white">
+        <h1 class="text-2xl font-bold">Welcome to My Home Page</h1>
+    </header>
+
+    <main class="container mx-auto mt-8">
+        <!-- Story Creation Section -->
+        <section id="story-section" class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-xl font-semibold mb-4">Create a Story</h2>
+            <form id="story-form">
+                <label for="story-input" class="block text-gray-700">Enter your story:</label>
+                <input type="text" id="story-input" class="w-full p-2 border border-gray-300 rounded mt-2" placeholder="Your story here...">
+                <p id="error-message" class="text-red-500 mt-2 hidden">Story must be at least 3 characters long.</p>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 mt-4 rounded">Submit</button>
+            </form>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile-section" class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-xl font-semibold mb-4">Profile Information</h2>
+            <p class="text-gray-700">Name: Bhagwat Karale</p>
+            <p class="text-gray-700">Email: bhagwatkarale2003.com</p>
+        </section>
+
+        <!-- Settings Section -->
+        <section id="settings-section" class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4">Settings</h2>
+            <p class="text-gray-700">Notification Settings: On</p>
+        </section>
+    </main>
+
+    <footer class="bg-blue-500 p-4 text-white text-center mt-8">
+        <p>&copy; 2024 My Home Page</p>
+    </footer>
+</body>
+</html>
